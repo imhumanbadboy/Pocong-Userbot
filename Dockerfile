@@ -4,7 +4,7 @@ FROM ximfine/xproject:buster
 #
 # Clone repo and prepare working directory
 #
-RUN git clone -b pocong https:/imhumanbadboy/root/pocong-Userbot/
+RUN git clone -b pocong https:/imhumanbadboy/root/userbot/
 RUN mkdir /root/userbot/.bin
 WORKDIR /root/userbot
 
@@ -17,6 +17,6 @@ EXPOSE 80 443
 RUN pip install --upgrade pip
 
 #Install python requiremets
-#RUN pip3 install -r https://raw.githubusercontent.com/poocong/Pocong-Userbot/pocong/requirements.txt
+#RUN pip3 install -r https://raw.githubusercontent.com/imhumanbadboy/Pocong-Userbot/pocong/requirements.txt
 
 CMD ["python3","-m","userbot"]
